@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="866.0" style="-fx-background-color: #2d4956;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id1212.homework3.adisu.rmi.client.controller.LoginController">
+    <stylesheets>
+        <URL value="@/style/loginfxmldoc.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="98.0" prefWidth="878.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="106.0" layoutX="396.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/logi.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="552.0" layoutY="15.0" prefHeight="45.0" prefWidth="161.0" style="-fx-background-color: #2d4956;" text="Not Registered?" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSignUp" layoutX="720.0" layoutY="15.0" onMouseClicked="#handlePane" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #2171a3; -fx-border-radius: 3em;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panSignUp" layoutX="3.0" layoutY="99.0" prefHeight="302.0" prefWidth="877.0" style="-fx-background-color: #2d4956;">
+         <children>
+            <JFXTextField fx:id="txtFullName" focusColor="WHITE" layoutX="269.0" layoutY="45.0" prefHeight="39.0" prefWidth="340.0" promptText="Full Name" style="-fx-background-color: #2171a3;" unFocusColor="#2688ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" layoutX="269.0" layoutY="192.0" prefHeight="39.0" prefWidth="340.0" promptText="Password" style="-fx-background-color: #2171a3;" unFocusColor="#2688ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogin" layoutX="448.0" layoutY="246.0" onMouseClicked="#handlePane" prefHeight="45.0" prefWidth="161.0" style="-fx-background-color: #2171a3; -fx-border-radius: 3em; -fx-background-radius: 3em;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtUserName" focusColor="WHITE" layoutX="269.0" layoutY="95.0" prefHeight="39.0" prefWidth="340.0" promptText="User Name" style="-fx-background-color: #2171a3;" unFocusColor="#2688ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="269.0" layoutY="144.0" prefHeight="39.0" prefWidth="340.0" promptText="Email" style="-fx-background-color: #2171a3;" unFocusColor="#2688ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnRegister" layoutX="269.0" layoutY="246.0" onAction="#handleRegistration" prefHeight="45.0" prefWidth="161.0" style="-fx-background-color: #2171a3; -fx-border-radius: 3em; -fx-background-radius: 3em;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblMessage" contentDisplay="CENTER" layoutX="177.0" layoutY="2.0" prefHeight="39.0" prefWidth="521.0" textFill="#f53c07">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panLogin" layoutX="1.0" layoutY="98.0" prefHeight="308.0" prefWidth="880.0" style="-fx-background-color: #2d4956;">
+         <children>
+            <JFXTextField fx:id="txtUser" focusColor="WHITE" layoutX="299.0" layoutY="75.0" prefHeight="45.0" prefWidth="340.0" promptText="User Name" style="-fx-background-color: #2171a3;" unFocusColor="#2688ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPass" focusColor="WHITE" layoutX="299.0" layoutY="136.0" prefHeight="45.0" prefWidth="340.0" promptText="Password" style="-fx-background-color: #2171a3;" unFocusColor="#2688ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogIn" layoutX="359.0" layoutY="202.0" onAction="#handleLogin" prefHeight="45.0" prefWidth="201.0" style="-fx-background-color: #2171a3; -fx-border-radius: 3em; -fx-background-radius: 3em;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="245.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="241.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/password.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="logMessage" layoutX="297.0" layoutY="23.0" prefHeight="39.0" prefWidth="340.0" style="-fx-font: 24px &quot;Serif&quot;;" textFill="#00bcff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

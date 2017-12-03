@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button:hover {
+    -fx-background-color:  #3c4956;
+    -fx-text-fill: black;
+}
+/*.table-row-cell{
+    -fx-background-color: #3c4956;
+}
+.table-row-cell:empty.table-row-cell{
+    -fx-border-width: 0px;
+}*/
